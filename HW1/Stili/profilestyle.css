@@ -1,0 +1,363 @@
+body {
+  background-color: #2d41d4;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f8f8f8;
+}
+
+header nav {
+  background-color: #0b102d;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#links a:visited {
+  text-decoration: none;
+  color: white;
+}
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #8a6f6f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #191f45;
+}
+
+@media (max-width: 600px) {
+  li {
+    display: block;
+  }
+
+  #link {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+#logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#links a {
+  margin: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+}
+
+#separator {
+  display: inline-block;
+  height: 16px;
+  width: 1px;
+  background: currentColor;
+}
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+  #menu {
+    display: block;
+  }
+}
+
+.button {
+  background-color: #0b77cf;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+.userInfo {
+  padding-top: 10%;
+  padding-left: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+#results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.track {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  height: 20%;
+  background-color: #10142d;
+  border-radius: 8px;
+  margin: 15px;
+  transition: width 0.2s, background-color 0.2s;
+}
+
+.track:hover {
+  background-color: #191f45;
+}
+
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.trackInfo:hover + .saveForm {
+  opacity: 1;
+}
+
+.saveForm {
+  opacity: 0;
+}
+
+.saveForm:hover {
+  opacity: 1;
+}
+
+.saveIcon {
+  margin-left: -50px;
+  padding-top: 212px;
+  width: 30px;
+  box-shadow: none;
+  position: absolute;
+}
+
+.artistaInfo,
+.canzoneInfo {
+  display: none;
+}
+
+.artistaInfo p {
+  margin-top: 0;
+}
+
+.infoContainer {
+  min-height: 62px;
+}
+
+.show {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.selected {
+  position: fixed;
+  width: 50%;
+  height: auto;
+  z-index: 10;
+  left: 25%;
+  top: 25%;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+}
+
+.unselected {
+  height: 50%;
+}
+
+@media (max-width: 500px) {
+  .artisti,
+  .canzoni {
+    width: auto;
+    margin: 0 auto 30px;
+  }
+}
+
+.track a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+strong {
+  font-size: 18px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.showTitle {
+  overflow: visible;
+}
+
+img {
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+  transition: width 0.2s;
+  background-color: #fff;
+}
+
+.img-selected {
+  width: 80%;
+  max-width: 260px;
+}
+
+.infoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.infoSelected {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+}
+
+.nores {
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 .team-container {
+  margin: 0;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 70px;
+  height: max-content;
+  overflow: hidden;
+}
+
+.card-pokemon {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  width: 200px;
+  margin: 10px;
+  border: solid 1px;
+}
+
+.card-like {
+  border: solid 1px white;
+  margin: 3px;
+}
+
+.container-commenti {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+button {
+  font-size: 13px;
+  padding: 0.2em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+button:active {
+  transform: translate(0em, 0.2em);
+}

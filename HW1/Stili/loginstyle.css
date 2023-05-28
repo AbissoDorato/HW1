@@ -1,0 +1,200 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/******************************form*************************************/
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  color: rgb(97, 97, 97);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  width: 22rem;
+  background-clip: border-box;
+  border: solid;
+}
+
+.header {
+  position: relative;
+  background-clip: border-box;
+  background-color: #0d90bc;
+  background-image: linear-gradient(to top right, #138ad4, #0f94d6);
+  margin: 10px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    rgba(33, 150, 243, 0.4);
+  height: 7rem;
+  letter-spacing: 0;
+  line-height: 1.375;
+  font-weight: 600;
+  font-size: 1.9rem;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+  padding: 1.5rem;
+  /*gap: 1rem;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+  width: 90%;
+  height: 2.75rem;
+  position: relative;
+}
+
+.input {
+  border: 1px solid rgba(128, 128, 128, 0.61);
+  outline: 0;
+  gap: 1rem;
+  color: rgb(69 90 100);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  padding: 0.65rem;
+  background-color: transparent;
+  border-radius: 0.375rem;
+  width: 80%;
+  height: 20%;
+  margin: 3px;
+}
+
+.input:focus {
+  border: 1px solid #1e88e5;
+}
+
+.checkbox-container {
+  margin-left: -0.625rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+  overflow: hidden;
+  padding: 0.55rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.027);
+  height: 35px;
+  width: 35px;
+}
+
+.checkbox input {
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  cursor: pointer;
+}
+
+.sigin-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #1e88e5;
+  background-image: linear-gradient(to top right, #149ed9, #38b5eb);
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  color: #fff;
+}
+
+.signup-link {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-link a,
+.forget {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-left: 0.25rem;
+  color: #1e88e5;
+}
+
+.forget {
+  text-align: right;
+  font-weight: 600;
+}
+
+/******************************form*************************************/
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 100px;
+  border-radius: 30px;
+  background: #0f61ddbb;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border: solid 1px #000;
+  margin-bottom: 10px;
+}
+
+.errorj label {
+  color: #d01b2d;
+}
+
+.errorj span {
+  opacity: 1;
+  font-size: 14px;
+  color: #d01b2d;
+}
+
+.errorj img {
+  opacity: 1;
+}
+
+.errorj input,
+.errorj #upload {
+  border-color: #d01b2d;
+}
+
+.user,
+.email,
+.password,
+.confirm_password {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
